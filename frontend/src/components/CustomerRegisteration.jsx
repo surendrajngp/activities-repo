@@ -45,6 +45,7 @@ const CustomerRegisteration = () => {
             value={firstname}
             onChange={(event) => setFirstName(event.target.value)}
             required
+            minLength={3}
           />
         </div>
         <div className="mb-3">
@@ -58,6 +59,7 @@ const CustomerRegisteration = () => {
             value={lastname}
             onChange={(event) => setLastName(event.target.value)}
             required
+            minLength={1}
           />
         </div>
         <div className="mb-3">
@@ -101,6 +103,8 @@ const CustomerRegisteration = () => {
             value={phone}
             onChange={(event) => setPhone(event.target.value)}
             required
+            minLength={10}
+            maxLength={10}
           />
         </div>
         <div className="mb-3">
